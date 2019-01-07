@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<form method="post" enctype="multipart/form-data">
+    <label for="name">Файл формата .tcx:</label><br />
+    <input type="file" name="tcxFile" /><br>
+    <label for="distance">Реальное расстояние в метрах:</label><br />
+    <input type="number" name="distance" /><br>
+    <br>
+    <input type="submit" value="Конвертировать" />
+</form>

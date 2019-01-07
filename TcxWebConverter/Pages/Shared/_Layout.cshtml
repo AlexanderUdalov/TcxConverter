@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - TcxConverterWeb</title>
+    <title>@ViewData["Title"] - TcxWebConverter</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -17,13 +17,21 @@
     </environment>
 </head>
 <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a asp-page="/Index" class="navbar-brand">TcxWebConverter</a>
+            </div>
+        </div>
+    </nav>
+
     <partial name="_CookieConsentPartial" />
 
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2019 - TcxConverterWeb</p>
+            <p>&copy; 2019 - TcxWebConverter</p>
         </footer>
     </div>
 
