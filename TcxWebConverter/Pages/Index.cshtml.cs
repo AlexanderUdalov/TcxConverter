@@ -75,7 +75,7 @@ namespace TcxWebConverter.Pages
             var resultXmlString = ReturnUnsupportedTypes(resultStream);
 
             byte[] bytes = Encoding.Default.GetBytes(resultXmlString);
-            string file_type = "application/xml";
+            string file_type = "application/octet-stream";
             string file_name = TcxFile.FileName.Insert(TcxFile.FileName.IndexOf(".tcx"), "_converted");
             return File(bytes, file_type, file_name);
         }
